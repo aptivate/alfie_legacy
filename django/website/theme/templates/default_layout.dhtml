@@ -1,4 +1,4 @@
-{% load menu %}
+{% comment %}{% load menu %}{% endcomment %}
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -27,6 +27,7 @@
 		{% endblock %}
 	</head>
 	<body class="{% block body_classes %}{% endblock %}">
+{% comment %}
 		<div id="header">
 			<div id="header-inner">
 				<h1><a href="/">Generic</a></h1>
@@ -34,7 +35,6 @@
 				<div class="user-access">
 				</div>
 			</div>
-			
 			<div id="access">
 				<div id="access-inner">
 					<div class="menu-header">
@@ -47,6 +47,7 @@
 				</div>
 			</div>
 		</div>
+{% endcomment %}
 		<div id="wrapper">
 			<div id="wrapper-inner">
 				<div id="content" class="content">

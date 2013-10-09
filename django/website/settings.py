@@ -117,7 +117,11 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'south',
     'django_tables2',
+    'django_extensions',
+
+    # our apps
     'logframe',
+    'theme',
 )
 
 # A sample logging configuration. The only tangible logging
