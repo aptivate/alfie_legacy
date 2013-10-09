@@ -12,15 +12,11 @@ project_name = "alfie"
 
 # The django apps that are part of this project - used for running tests
 # and migrations
-django_apps = ['project_app1', 'project_app2']
+django_apps = ['logframe']
 
 # repository type can be "cvs", "svn" or "git"
-repo_type = "svn"
-repository = 'https://svn.aptivate.org/svn/' + project_name + '/dev'
-
-#repo_type = "git"
-#repository = 'git@git.aptivate.org:' + project_name + '.git'
-#repository = 'git@github.com:aptivate/' + project_name + '.git'
+repo_type = "git"
+repository = 'git@github.com:aptivate/' + project_name + '.git'
 
 ##################################################################
 # THESE SETTINGS MAY WELL BE CORRECT FOR A STANDARD DJANGO PROJECT
@@ -44,12 +40,10 @@ local_deploy_dir = path.dirname(__file__)
 local_vcs_root = path.abspath(path.join(local_deploy_dir, os.pardir))
 
 # the path from the VCS root to the django root dir
-relative_django_dir = path.join('django', project_name)
-#relative_django_dir = path.join('django', 'website')
+relative_django_dir = path.join('django', 'website')
 
 # the directory the settings live in, relative to the vcs root
-relative_django_settings_dir = path.join(relative_django_dir, project_name)
-#relative_django_settings_dir = relative_django_dir
+relative_django_settings_dir = relative_django_dir
 
 # the path from the VCS root to the virtualenv dir
 relative_ve_dir = path.join(relative_django_dir, '.ve')
@@ -79,8 +73,8 @@ host_list = {
 # this is the default git branch to use on each server
 default_branch = {
     'production':   'master',
-    'staging':      'master',
-    'staging_test': 'master',
+    'staging':      'develop',
+    'staging_test': 'develop',
     'dev_server':   'develop',
 }
 

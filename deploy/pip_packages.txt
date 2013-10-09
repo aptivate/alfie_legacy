@@ -1,3 +1,10 @@
-Django==1.5
-MySQL-python>=1.2.3
+# deploy
 -e git+git://github.com/aptivate/dye.git#egg=dye
+
+# core django
+Django==1.5.4
+south==0.8.2
+MySQL-python>=1.2.3
+
+# other
+django_tables2==0.14.0

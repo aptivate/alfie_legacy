@@ -6,8 +6,8 @@ TEMPLATE_DEBUG = DEBUG
 # These email addresses will get all the error email for the production server
 # (and any other servers with DEBUG = False )
 ADMINS = (
-    ('Aptivate  team', '-team@aptivate.org'),
-    ('', ''),  # this is in case the above email doesn't work
+    #('Aptivate Intranet team', '-team@aptivate.org'),
+    ('Hamish Downer', 'hamish@aptivate.org'),  # this is in case the above email doesn't work
 )
 
 MANAGERS = ADMINS
@@ -115,6 +115,9 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'south',
+    'django_tables2',
+    'logframe',
 )
 
 # A sample logging configuration. The only tangible logging
