@@ -9,6 +9,7 @@ MySQL-python==1.2.4
 # other
 django_tables2==0.14.0
 django-extensions==1.2.2
+lxml
 
 # tests
 django-dynamic-fixture==1.6.5
