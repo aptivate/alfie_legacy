@@ -16,7 +16,7 @@ django_apps = ['logframe']
 
 # repository type can be "cvs", "svn" or "git"
 repo_type = "git"
-repository = 'git@github.com:aptivate/' + project_name + '.git'
+repository = 'git://github.com/aptivate/' + project_name + '.git'
 
 ##################################################################
 # THESE SETTINGS MAY WELL BE CORRECT FOR A STANDARD DJANGO PROJECT
