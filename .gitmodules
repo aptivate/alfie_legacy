@@ -1,3 +1,6 @@
 [submodule "django/website/logframe"]
 	path = django/website/logframe
 	url = git://github.com/aptivate/intranet-logframe.git
+[submodule "django/website/binder"]
+	path = django/website/binder
+	url = git://github.com/aptivate/intranet-binder.git
