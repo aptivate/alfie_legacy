@@ -120,6 +120,7 @@ INSTALLED_APPS = (
     'django_extensions',
 
     # our apps
+    'binder',
     'logframe',
     'theme',
 )
