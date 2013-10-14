@@ -1,8 +1,10 @@
 from django.conf.urls import patterns, include, url
+from django.core.urlresolvers import reverse_lazy
+from django.views.generic import RedirectView
+#from django.conf import settings
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
-from django.conf import settings
 admin.autodiscover()
 
 import logframe.urls
@@ -18,11 +20,14 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 
-    url(r'logframe/', include(logframe.urls)),
+    url(r'^logframe/', include(logframe.urls)),
 
     #This requires that static files are served from the 'static' folder.
     #The apache conf is set up to do this for you, but you will need to do it on
     #dev
     #(r'/favicon.ico', 'django.views.generic.simple.redirect_to',
     #    {'url':  '{0}images/favicon.ico'.format(settings.STATIC_URL)}),
+
+    # LAST - redirect from root URL to the logframe app
+    url(r'^$', RedirectView.as_view(url=reverse_lazy('logframe-output-create'))),
 )
