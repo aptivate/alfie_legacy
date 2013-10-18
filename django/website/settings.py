@@ -34,6 +34,9 @@ USE_I18N = True
 # calendars according to the current locale.
 USE_L10N = True
 
+# with big numbers, make 10000 into 10,000
+USE_THOUSAND_SEPARATOR=True
+
 # If you set this to False, Django will not use timezone-aware datetimes.
 USE_TZ = True
 
@@ -120,6 +123,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
+    'django.contrib.humanize',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
