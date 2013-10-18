@@ -29,5 +29,5 @@ urlpatterns = patterns('',
     #    {'url':  '{0}images/favicon.ico'.format(settings.STATIC_URL)}),
 
     # LAST - redirect from root URL to the logframe app
-    url(r'^$', RedirectView.as_view(url=reverse_lazy('logframe-output-create'))),
+    url(r'^$', RedirectView.as_view(url=reverse_lazy('logframe-overview', 1))),
 )
