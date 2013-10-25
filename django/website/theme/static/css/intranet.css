@@ -162,6 +162,15 @@ form {
     font-weight:normal;
 }
 
+#aptivate-logo {
+	float: right;
+	vertical-align: top;
+}
+
+#aptivate-logo > img {
+	height: 45px;  /* half size */
+}
+
 
 /* Navigation -------------------------------------------------- */
 #access .skip-link {
