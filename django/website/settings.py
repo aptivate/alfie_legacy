@@ -35,7 +35,7 @@ USE_I18N = True
 USE_L10N = True
 
 # with big numbers, make 10000 into 10,000
-USE_THOUSAND_SEPARATOR=True
+USE_THOUSAND_SEPARATOR = True
 
 # If you set this to False, Django will not use timezone-aware datetimes.
 USE_TZ = True
@@ -93,6 +93,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'waffle.middleware.WaffleMiddleware',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -132,6 +133,7 @@ INSTALLED_APPS = (
     'south',
     'django_tables2',
     'django_extensions',
+    'waffle',
 
     # our apps
     'binder',
