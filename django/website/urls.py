@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, include, url
-from django.core.urlresolvers import reverse_lazy
+#from django.core.urlresolvers import reverse_lazy
 from django.views.generic import RedirectView
 from django.conf import settings
 
@@ -29,5 +29,7 @@ urlpatterns = patterns('',
         url='{0}images/favicon.ico'.format(settings.STATIC_URL))),
 
     # LAST - redirect from root URL to the logframe app
-    url(r'^$', RedirectView.as_view(url=reverse_lazy('logframe-overview', 1))),
+    url(r'^$', RedirectView.as_view(url='/logframe/overview/1/')),
+    # TODO: work out why the below doesn't work ...
+    #url(r'^$', RedirectView.as_view(url=reverse_lazy('logframe-overview', 1))),
 )
