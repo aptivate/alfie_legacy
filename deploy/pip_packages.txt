@@ -1,5 +1,5 @@
 # deploy
--e git+git://github.com/aptivate/dye.git@d4359e933b671050719905654dee48e5db1afcdd#egg=dye
+-e git+git://github.com/aptivate/dye.git@6bd5feb404acb4f9e313732c7e97a531d2e0f8c8#egg=dye
 
 # core django (using django 1.6)
 https://www.djangoproject.com/download/1.6b4/tarball/
