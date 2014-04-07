@@ -68,6 +68,7 @@ host_list = {
     'staging':      ['fen-vz-alfie-stage.fen.aptivate.org'],
     'staging_test': ['fen-vz-alfie-stage.fen.aptivate.org'],
     'dev_server':   ['fen-vz-' + project_name + '-dev.fen.aptivate.org'],
+    'demo':         ['lin-one.aptivate.org:48001']
 }
 
 # this is the default git branch to use on each server
@@ -76,6 +77,7 @@ default_branch = {
     'staging':      'master',
     'staging_test': 'develop',
     'dev_server':   'develop',
+    'demo':         'demo'
 }
 
 # where on the server the django apps are deployed
